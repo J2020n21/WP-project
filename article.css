@@ -7,34 +7,70 @@
   text-align: center;
 }
 
-header h1{
-  background-color: green;
+
+header {
+  /* background-color: yellowgreen; */
+}
+
+/* nav */
+nav{
+  /* border:1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  height:70px;
+}
+
+nav img{ width:100px; height: 60px;}
+
+nav ul{
+  display: flex;
+  text-align: center;
+  margin-top: 5px;
+}
+nav ul li{
+  display: inline-block;
+  padding:15px 10px; width: 120px;
+  transition: color 10s;
+}
+nav ul li a:hover{
+   color: #5FA0D1;
+}
+nav ul li a{
+  text-decoration: none;
+  color: black;
+
+}
+
+/* header nav ul{display: flex; text-align: center;}
+header nav ul li{padding: 20px 10px; width: 88px;} */
+
+/* main */
+/* main 본문내용 */
+.written{color:grey; font-size: 15px; text-align: left;}
+.content{color:black;}
+.summarize{
+  font-weight: bold;
+  font-style: italic;}
+.summarize:hover{
+  text-decoration: underline;
 }
 
 section{
   border:1px solid red;
   display:inline-block;
-  height: 600px; width: 1050px;
-position:absolute;
+  height: 600px; width: 900px;
+  position:absolute;
   top:170px; left:7px;
+  margin-top: 50px;
+  padding: 0px 100px;
 }
 
-.content{
-  color:red;
+figure>figcaption {
+  color:grey;
 }
-/* nav */
-nav{
-  border:1px solid black;
-}
-nav>h3{
-  display: inline-block;
-  border:1px solid black;
-  width:15%;
-}
+
 
 /* aside */
-
-
 .A1{
   border:1px solid black;
   left: 1100px;
@@ -54,8 +90,20 @@ nav>h3{
   width: 400px; height: 300px;
 }
 
+aside{
+  margin-top: 30px;
+}
+
 aside p {
   z-index: 10;
   position:absolute;
   bottom:100px;
+}
+
+/* footer */
+footer{
+  background-color: black;
+  color:white;
+  position:absolute;
+  bottom: 100px;
 }
