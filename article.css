@@ -1,0 +1,61 @@
+/* #wrap{
+  width:1250px;
+  align=center;
+  overflow=scroll;
+} */
+*{
+  text-align: center;
+}
+
+header h1{
+  background-color: green;
+}
+
+section{
+  border:1px solid red;
+  display:inline-block;
+  height: 600px; width: 1050px;
+position:absolute;
+  top:170px; left:7px;
+}
+
+.content{
+  color:red;
+}
+/* nav */
+nav{
+  border:1px solid black;
+}
+nav>h3{
+  display: inline-block;
+  border:1px solid black;
+  width:15%;
+}
+
+/* aside */
+
+
+.A1{
+  border:1px solid black;
+  left: 1100px;
+  top:170px;
+  position:absolute;
+  text-align:center;
+  overflow: hidden;
+  width: 400px; height: 200px;
+}
+.A2{
+  border:1px solid black;
+  left: 1100px;
+  top:400px;
+  position:absolute;
+  text-align:center;
+  overflow: hidden;
+  width: 400px; height: 300px;
+}
+
+aside p {
+  z-index: 10;
+  position:absolute;
+  bottom:100px;
+}
