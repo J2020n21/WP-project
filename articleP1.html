@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <!-- 기사클릭시 이어지는 페이지 -->
-    <title>기사1</title>
+    <title>미국기사1</title>
     <link rel="stylesheet" href="article.css">
     <link rel="icon" href="Image/favicon.ico" type="image/x-icon" sizes="16x16">
   </head>
@@ -11,7 +11,6 @@
 <!--화면 해상도 고정용 div-->
   <!-- <div id="wrap" style="width:100%;" align="center" overflow="hidden"> -->
 <!-- 화면해상도: 부모레이어 relative 자식 abs -->
-
 
 
 <!-- header,nav 요소 붙여넣기 -->
@@ -89,14 +88,15 @@
 <!-- 옆;이어지는 같은 카테고리의 기사글 -->
 <!-- 마우스 올리면 기사 제목이 보이도록-->
 
-    <!-- <aside>
+     <aside>
       <div class="A1">
         <a href="articleP2.html" target="_self">
-          <img src="Image/image.jpeg" alt="">
-          <p>연결기사1</p>
+          <img class="image-thumbnail" src="Image/Asia/asia1.jpeg" alt="">
+          <p>中·日정상회담 ‘협력’ 무게…"합의 기반 차이 존중해야"(종합)</p>
         </a>
       </div>
     </aside>
+    <!-- min/max width와 %로 조절 -->
 
     <aside>
       <div class="A2">
@@ -105,8 +105,17 @@
           <p>연관기사2</p>
         </a>
       </div>
-    </aside> -->
+    </aside>
 
+    <aside class="A3list">
+      <ul>
+        <li><a href="#">기사1</a></li>
+        <li><a href="#">기사2</a></li>
+        <li><a href="#">기사3</a></li>
+        <li><a href="#">기사4</a></li>
+        <li><a href="#">기사5</a></li>
+      </ul>
+    </aside>
 
 <!--footer:문의사항/기타/설문사항:추가  -->
 <!--
@@ -123,6 +132,7 @@
 </html>
 
 <!--TODO: cursor,애니메이션,텍스트그림자,-->
-<!--1. 해상도/옆기사위치깨짐문제 -->
-<!--2. 화면 공백/마진으로 위치 제대로잡기!!  -->
-<!--3. footer부분 만들기 -->
+<!--1. footer 밑에 넣기-->
+<!--2. aside게시글 위치/깨짐현상 조정하기-->
+<!--3. 본문박스 크기/등등 깨지지않도록 조절-->
+<!-- !!화면 가로 스크롤 ->꺠짐? -->
