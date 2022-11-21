@@ -11,8 +11,9 @@ body{
   overflow-x: hidden;
 }
 
-header {
+header nav img{
   /* background-color: yellowgreen; */
+  width: 13%;
 }
 
 /* nav */
@@ -117,15 +118,19 @@ aside p {
   text-align:justify;
 }
 
-aside p,li:hover{
+aside p:hover{
   text-decoration: underline;
   font-weight: bold;
 }
+aside p li{
+  text-decoration: none;
+  color: black;
+}
 /* footer */
 
-footer{
+/* footer{
   background-color: black;
   color:white;
   position:relative;
   bottom:0;
-}
+} */
