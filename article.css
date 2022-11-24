@@ -1,136 +1,218 @@
-/* #wrap{
-  width:1250px;
-  align=center;
-  overflow=scroll;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Nanum+Gothic&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap'); */
+
+
+#wrapper{
+  opacity: 0.9;
+  transition: opacity 1s;
+}
+#wrapper:hover{
+  opacity: 1;
+}
+
 *{
   text-align: center;
 }
-
-body{
-  overflow-x: hidden;
+html{
+  height: 1000px;
 }
 
-header nav img{
-  /* background-color: yellowgreen; */
-  width: 13%;
+body{
+  /* 가로 스크롤 없얨 */
+  overflow-x: hidden;
+  height: 100%;
+  display: block;
+}
+
+
+/* head */
+.head
+{
+    background-color: #5FA0D1;
+    height: 50px; text-align:center;
+    vertical-align:middle;
+    color:white;
+    font-family: 'Gugi', cursive;
+    font-size:50px;
+    padding:50px;
+
 }
 
 /* nav */
-nav{
-  /* border:1px solid black; */
-  display: flex;
-  justify-content: space-between;
-  height:70px;
-}
+.menu
+{
+  width: 100%;
+  overflow: hidden;
+  margin: auto;
+  font-family: 'Gugi', cursive;
+  /* font-family:"굴림", cursive; */
+}/*NAV의 기본속성입니다.*/
 
-nav img{ width:100px; height: 60px;}
-
-nav ul{
-  display: flex;
+.menu > li {
+  width: 20%;/*메뉴 항목이 5개라 100/5=20*/
+  float: left;
   text-align: center;
-  margin-top: 5px;
+  line-height: 40px;/*줄높이 설정(여백 크기 정하기)*/
+  background-color:white;
+  transition:background-color,1s;/*색변화 줄 경우 1s의 시간동안 자연스럽게 변화*/
 }
-nav ul li{
-  display: inline-block;
-  padding:15px 10px; width: 120px;
-  transition: color 10s;
-}
-nav ul li a:hover{
-   color: #5FA0D1;
-}
-nav ul li a{
-  text-decoration: none;
+
+.menu >li> a {
+
+  display:inline-block;
+  width: 100%; /*li 크기의 100% 사용*/
   color: black;
-
+  font-size:large;
+  font-weight:bolder;
+  transition: color 1s;/*색변화 줄 경우 1s의 시간동안 자연스럽게 변화*/
+}/*NAV의 항목들 글씨스타일 관련*/
+.menu >li>a:hover
+{
+color:white;
 }
+.menu>li:hover
+{
+  background-color:#5FA0D1;
+}
+li{
+    list-style:none
+}/*li 안의 내용 앞에 아이콘 없애줌*/
+a{
+    text-decoration: none;font-size:14px;
+}/*a태그 밑줄 없애줌*/
 
-/* header nav ul{display: flex; text-align: center;}
-header nav ul li{padding: 20px 10px; width: 88px;} */
 
-/* main */
 /* main 본문내용 */
-.written{color:grey; font-size: 15px; text-align: left;}
+.written{color:grey; font-size: 15px; text-align: left; padding-left: 10%;}
 .content{color:black;}
-.summarize{
-  font-weight: bold;
-  font-style: italic;}
-.summarize:hover{
-  text-decoration: underline;
+.summarize{font-weight: bold;  font-style: italic;}
+.summarize:hover{text-decoration: underline;}
+
+.article{
+  display: block;
 }
 
 section{
-  border:1px solid black;
-  display:inline-block;
-  height: AUTO; width: 50%;
+  /* border:1px solid black; */
+  /* display:block; */
+  /* position:static; */
+   top:170px; left:7px;
+  float:left;
+  height: AUTO; width: 55%;
+  /* 내용물에 맞춰 높이 조정 */
   margin-top: 50px;
-  position:absolute; top:170px; left:7px;
-  padding-left: 60px; padding-right: 60px;  padding-bottom: 100px;
+
+  /* abs */
+  padding-left: 100px; padding-right: 100px;  padding-bottom: 100px;
+
   /* margin-left: 1%; */
-  text-align: justify;
+
 }
 
 figure>figcaption {
   color:grey;
+  font-size: 14px;
 }
 
 section img{
   max-width: 100%; height: auto;
 }
 
+section p{
+  line-height: 1.5em;
+  text-align: left;
+}
+
+
 /* aside */
-.A1{
-  border:1px solid black;
-  left: 65%;
-  top:230px;
-  position:absolute;
+
+.Alist{
+  position: relative; top:100px; left:5%;
+  width: 20%;
+  margin-right: 5%;
   overflow: hidden;
-  width: 30%; height: 35%;
-  /* width: 400px; height: 200px; */
-}
-
-.A2{
-  border:1px solid black;
-  left: 65%;
-  top:500px;
-  position:absolute;
-  overflow: hidden;
-  width: 30%; height: 35%;
-}
-.A3list{
-  border:1px solid black;
-  left: 65%;
-  top:750px;
-  position:absolute;
-  width: 30%;height: 35%;
-}
-
-aside{
-  margin-top: 30px;
-}
-
-aside p {
-  z-index: 10;
-  position:absolute;
-  bottom:20px;
-  color:black;
-  text-decoration: none
-  text-align:justify;
-}
-
-aside p:hover{
-  text-decoration: underline;
+  border-radius:5px;
+  color: white;
   font-weight: bold;
+  line-height: 40px;
+  border-left: 5px solid #5FA0D1;
+  /* vertical-align: top; */
+  /* padding-left: 5px; */
 }
+.Alist a{
+  text-decoration: none;
+  color:black
+}
+.Alist a:hover{
+  text-decoration: underline;
+}
+
+
 aside p li{
   text-decoration: none;
   color: black;
 }
+aside ul li{
+  text-decoration: none;
+  color:black;
+}
+
+.container{
+  content: '';
+  background: url(웹프/na.jpg) no-repeat center center/cover;
+  float:right;
+  width: 17%;
+  opacity: 0.9;
+  margin-right: 5%;
+  padding: 0 2rem;
+  overflow: hidden;
+  border-radius:5px;
+  color: white;
+  font-weight: bold;
+  }
+
+.sub{
+    vertical-align: top;
+    height:120px;
+    margin-top:50px;
+    transition:height 1s;
+}
+.sub:hover{
+    height:250px;
+    /* text-decoration-line: underline; */
+}
+.readmore{
+  display: inline-block;
+  border: 1px solid;
+  background-color: red;
+  color: #fff;
+  opacity: 0.5;
+  padding: 0.5rem 1.5rem;
+  text-decoration-line: none;
+}
+
+.date{
+  font-size: 10px;
+  text-align: left;
+}
+.line{
+  text-align: justify;
+}
+
+
 /* footer */
 
-/* footer{
-  background-color: black;
-  color:white;
-  position:relative;
-  bottom:0;
-} */
+ footer{
+   clear:both;
+  background-color: #5FA0D1;
+  color:black;
+  height: 300px; width: 100%;
+  position: absolute;
+  padding-top: 100px;
+  font-size: 20px;
+}
+footer p {
+  color: white;
+  text-align: left;
+  text-decoration: none
+}
