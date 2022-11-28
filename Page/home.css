@@ -1,0 +1,94 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Gugi&family=Nanum+Gothic&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+.head{background-color: #5FA0D1;
+    height: 50px; text-align:center;
+    vertical-align:middle;
+    color:white;
+    font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+    font-size:50px;
+padding:50px;}
+.container{
+content: '';
+  background: url(../Image/asia.jpg) no-repeat center center/cover;
+  position: static;
+  width: 840px;
+  height: 400px;
+  opacity: 0.8;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+  border-radius:5px;
+  }
+.line1{margin-top:3px;
+text-align:center;}
+h1{
+    font-size:40px;
+}
+
+
+.readmore{
+
+  display: inline-block;
+  border: 1px solid;
+  background-color: red;
+  color: #fff;
+  opacity: 0.5;
+  padding: 0.5rem 1.5rem;
+  text-decoration-line: none;
+}
+.menu {
+  width: 100%;
+  overflow: hidden;
+  margin: auto;
+  font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+}
+.menu > li {
+  width: 20%;
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  background-color:white;
+  transition:background-color,1s;
+}
+.menu>li:hover
+{
+  background-color:#5FA0D1;
+  color:white;
+}
+.menu a {
+  color: black;
+  font-size:large;
+  font-weight:bolder;
+}
+li{list-style:none}
+a{text-decoration: none;font-size:14px;}
+
+.sub{
+    height:150px;
+    margin-top:50px;
+    transition:height 1s;
+}
+.sub:hover{
+    height:400px;
+}
+.date{}
+
+
+
+
+.box1{
+    background: url(../Image/Europe/eu1_1.jpg) no-repeat center center/cover;
+}
+.box2{
+    background: url(../Image/America/am1_1.jpeg) no-repeat center center/cover;
+}
+.box3{
+    background: url(../Image/Africa/afr1_1.jpg) no-repeat center center/cover;
+}
+.box4{
+    background: url(../Image/Asia/asia1.jpeg) no-repeat center center/cover;
+}
+.box5{
+    background: url(../Image/Catarrh/cat1.jpg) no-repeat center center/cover;
+}
