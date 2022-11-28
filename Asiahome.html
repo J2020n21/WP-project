@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Nanum+Gothic&display=swap');
+/*구글에서 폰트 불러오기입니다 인터넷 연결 필요*/
+.head
+{
+    background-color: #5FA0D1; 
+    height: 50px; text-align:center; 
+    vertical-align:middle; 
+    color:white; 
+    font-family: 'Gugi', cursive;
+    font-size:50px;
+    padding:50px;
+}
+.head>a
+{
+display:inline-block;
+width:100%;
+color:White;
+font-family: 'Gugi', cursive;
+    font-size:50px;
+}
+/*--head클래스는 맨위 제목 부분입니다. head클래스의 크기,배경,글씨스타일을 담았습니다.*/
+.menu 
+{
+  width: 100%;
+  overflow: hidden;
+  margin: auto;
+  font-family: 'Gugi', cursive;
+}/*NAV의 기본속성입니다.*/
+
+.menu > li {
+  width: 20%;/*메뉴 항목이 5개라 100/5=20*/
+  float: left;
+  text-align: center;
+  line-height: 40px;/*줄높이 설정(여백 크기 정하기)*/
+  background-color:white;
+  transition:background-color,1s;/*색변화 줄 경우 1s의 시간동안 자연스럽게 변화*/
+}
+
+.menu >li> a {
+  
+  display:inline-block;
+  width: 100%; /*li 크기의 100% 사용*/
+  color: black;
+  font-size:large;
+  font-weight:bolder;
+  transition: color 1s;/*색변화 줄 경우 1s의 시간동안 자연스럽게 변화*/
+}/*NAV의 항목들 글씨스타일 관련*/
+.menu >li>a:hover
+{
+color:white;
+}
+.menu>li:hover
+{
+  background-color:#5FA0D1;
+}
+li{
+    list-style:none
+}/*li 안의 내용 앞에 아이콘 없애줌*/
+a{
+    text-decoration: none;font-size:14px;
+}/*a태그 밑줄 없애줌*/
+/*******************************************메뉴바 끝*********************************************/
+
+
+
+/******************뉴스 카드의 기본 설정입니다.***********************************/
+.container{
+  background: url(Image/Asia/asia1.jpeg) no-repeat center center/cover;
+  position: static;
+  width: 840px;
+  height: 400px;
+
+  color:black;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+  border-radius:5px;
+  transition:opacity 1s;
+  text-shadow:-0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -0.5px white;
+  }
+.line1{margin-top:3px;
+text-align:center;}
+.container:hover{
+    opacity:0.7;
+    color: black;
+}
+h1{
+    font-size:40px;
+}
+p{
+    font-size:25px;
+    text-shadow:-0.5px 0 lightgray, 0 0.5px lightgray, 0.5px 0 lightgray, 0 -0.5px lightgray;
+}
+/*******************sub는 headline을 제외한 접혀있는 카드를 관리하는 설정입니다.*******************/
+.sub{
+    height:150px;
+    margin-top:50px;
+    transition:height 1s;}
+    
+.sub:hover{
+    height:400px;
+    
+    
+}
+/*******************sub는 headline을 제외한 접혀있는 카드를 관리하는 설정입니다.*******************/
+
+
+/*****더보기 버튼 관련 설정입니다.*******/
+.readmore{
+  
+  display: inline-block;
+  border: 1px solid;
+  background-color: red;
+  color: #fff;
+  opacity: 0.5;
+  padding: 0.5rem 1.5rem;
+  text-decoration-line: none;
+}
+/*****더보기 버튼 관련 설정입니다.*******/
+
+/*************boxN은 박스안의 사진 바꾸는 용도입니다.*************/
+.box1{
+    background: url(Image/Asia/asia2.jpg) no-repeat center center/cover;
+}
+.box2{
+    background: url(Image/Asia/asia3_1.jpg) no-repeat center center/cover;
+}
+.box3{
+    background: url(Image/Asia/asia4.jpg) no-repeat center center/cover;
+}
+.box4{
+    background: url(Image/Asia/asia5.jpg) no-repeat center center/cover;
+}
+</style>
+</head>
+<body>
+<nav id="main-nav">
+    <div class="head"><a href="Home.html">WORLDS NEWSTACK</a></div>
+    <div>
+        <ul class="menu">
+            <li><a href="Asiahome.html" target="_self">아시아</a>
+            <li><a href="Euhome.html" target="_self">북미</a>
+            <li><a href="Amhome.html" target="_self">유럽</a>
+            <li><a href="Afhome.html" target="_self">아프리카</a>
+            <li><a href="QWhome.html" target="_self">카타르월드컵</a>
+        </ul>
+    </div>
+</nav>
+
+<header id="Headline">
+    <div class="container">
+        <h1>中·日정상회담 ‘협력’ 무게…"합의 기반 차이 존중해야"(종합)</h1>
+        <p>태국서 40분간 진행…양 정상 첫 대면
+            양국 국교정상화 50주년 등 기념
+            日, 센카쿠 열도·대만 문제 우려 전달
+            中 "양국, 4대 정치 문서 준수해야"</p>
+        <a href="Page/Article/Asia/asia1.html" class="readmore">더보기</a>
+    </div>
+</header>
+<!--main은 마우스를 올려야 header만큼 박스크기가 커집니다. header는 애니메이션효과없이 박스크기를 키웠습니다.-->
+<main>
+    <article>
+        <div class="container sub box1">
+            <h1>"중국, 에너지 위기 쿠바에 1억달러 지원 약속"<br><br></h1>
+            <p class="date">2022.11.27. 오후 11:07</p>
+            <p>쿠바 부총리, 자국 TV 출연해 지원 계획 언급<br>
+                중국이 최근 에너지 위기를 겪고 있는 쿠바에 1억달러(약 1300억원)를 지원하기로 약속했다는 주장이 제기됐다.</p>
+            <a href="Page/Article/Asia/asia2.html" class="readmore">더보기</a>
+        </div>
+    </article>
+    <article>
+        <div class="container sub box2">
+            <h1>‘한-몽골 공동위원회…희소금속협력센터 등 협력 방안 논의</h1>
+            <p class="date">2022.11.25. 오후 10:23</p>
+            <p>이도훈 외교부 2차관이 25일 오후 다쉬젝베 아마르바야스갈랑 몽골 내각관광부 장관과 제6차 한-몽골 공동위원회를 열고 한몽 희소금속협력센터 설치 등 협력 방안을 논의했다.
+            </p>
+            <a href="Page/Article/Asia/asia3.html" class="readmore">더보기</a>
+        </div>
+    </article>
+    <article>
+        <div class="container sub box3">
+            <h1>"기시다 일본 총리, 내년 1월 첫 방미 조율"<br><br></h1>
+            <p class="date">2022.11.24. 오후 8:44</p>
+            <p>기시다 후미오 일본 총리가 내년 1월 7∼9일 미국 워싱턴DC를 방문해 조 바이든 미국 대통령과 회담하는 방향으로 조율하고 있다고 교도통신이 일본 정부 관계자를 인용해 24일 보도했다. 
+            </p>
+            <a href="Page/Article/Asia/asia4.html" class="readmore">더보기</a>
+        </div>
+    </article>
+    <article>
+        <div class="container sub box4">
+            <h1>인니 자카르타 인근서 규모 5.6 지진…최소 46명 사망</h1>
+            <p>인도네시아 수도 인근에서 21일(현지시간) 지진이 발생해 최소 46명이 숨지고 700명이 다친 것으로 전해졌다. </p>
+            <a href="Page/Article/Asia/asia5.html" class="readmore">더보기</a>
+        </div>
+    </article>
+    
