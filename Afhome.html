@@ -3,14 +3,15 @@
 <head>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Gugi&family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 /*구글에서 폰트 불러오기입니다 인터넷 연결 필요*/
 .head
 {
-    background-color: #5FA0D1; 
-    height: 50px; text-align:center; 
-    vertical-align:middle; 
-    color:white; 
-    font-family: 'Gugi', cursive;
+    background-color: #5FA0D1;
+    height: 50px; text-align:center;
+    vertical-align:middle;
+    color:white;
+    font-family: 'Noto Sans KR', cursive;
     font-size:50px;
     padding:50px;
 }
@@ -19,16 +20,16 @@
 display:inline-block;
 width:100%;
 color:White;
-font-family: 'Gugi', cursive;
-    font-size:50px;
+font-family: 'Noto Sans KR', cursive;
+font-size:50px;
 }
 /*--head클래스는 맨위 제목 부분입니다. head클래스의 크기,배경,글씨스타일을 담았습니다.*/
-.menu 
+.menu
 {
   width: 100%;
   overflow: hidden;
   margin: auto;
-  font-family: 'Gugi', cursive;
+  font-family: 'Noto Sans KR', cursive;
 }/*NAV의 기본속성입니다.*/
 
 .menu > li {
@@ -41,7 +42,7 @@ font-family: 'Gugi', cursive;
 }
 
 .menu >li> a {
-  
+
   display:inline-block;
   width: 100%; /*li 크기의 100% 사용*/
   color: black;
@@ -100,18 +101,18 @@ p{
     height:150px;
     margin-top:50px;
     transition:height 1s;}
-    
+
 .sub:hover{
     height:400px;
-    
-    
+
+
 }
 /*******************sub는 headline을 제외한 접혀있는 카드를 관리하는 설정입니다.*******************/
 
 
 /*****더보기 버튼 관련 설정입니다.*******/
 .readmore{
-  
+
   display: inline-block;
   border: 1px solid;
   background-color: red;
@@ -135,16 +136,18 @@ p{
 .box4{
     background: url(Image/Africa/afr5.jpg) no-repeat center center/cover;
 }
+
 </style>
+<link rel="icon" href="Image/favicon.ico" type="image/x-icon" sizes="16x16">
 </head>
 <body>
 <nav id="main-nav">
-    <div class="head"><a href="Home.html">WORLDS NEWSTACK</a></div>
+    <div class="head"><a href="Home.html">WORLDS NEWS</a></div>
     <div>
         <ul class="menu">
             <li><a href="Asiahome.html" target="_self">아시아</a>
-            <li><a href="Euhome.html" target="_self">북미</a>
-            <li><a href="Amhome.html" target="_self">유럽</a>
+            <li><a href="Amhome.html" target="_self">북미</a>
+            <li><a href="Euhome.html" target="_self">유럽</a>
             <li><a href="Afhome.html" target="_self">아프리카</a>
             <li><a href="QWhome.html" target="_self">카타르월드컵</a>
         </ul>
@@ -155,7 +158,7 @@ p{
     <div class="container">
         <h1>빈살만, 尹대통령에 "후한 대접 감사…비전2030으로 협력하자"</h1>
         <p>서울 떠나면서 전보…"모든 분야에서 양국 협력" 모색</p>
-        <a href="Page/Article/Africa/afr1.html" class="readmore">더보기</a>
+        <a href="Page/Article/Africa/afr1.html"class="readmore">더보기</a>
     </div>
 </header>
 <!--main은 마우스를 올려야 header만큼 박스크기가 커집니다. header는 애니메이션효과없이 박스크기를 키웠습니다.-->
@@ -183,7 +186,7 @@ p{
             <h1>이스라엘 예루살렘 테러 추정 연쇄폭발... 최소 1명 사망<br><br></h1>
             <p class="date">2022.11.23. 오후 8:42</p>
             <p>10여 명 부상… “가방 든 폭발장치 의해 발생”<br>
-                이스라엘 안보장관, “공격”으로 규정 
+                이스라엘 안보장관, “공격”으로 규정
             </p>
             <a href="Page/Article/Africa/afr4.html" class="readmore">더보기</a>
         </div>
@@ -198,4 +201,3 @@ p{
             <a href="Page/Article/Africa/afr5.html" class="readmore">더보기</a>
         </div>
     </article>
-    
