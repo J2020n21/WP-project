@@ -136,12 +136,13 @@ section p{
   font-weight: bold;
   line-height: 40px;
   border-left: 5px solid #5FA0D1;
+  text-align: left;
   /* vertical-align: top; */
   /* padding-left: 5px; */
 }
 .Alist a{
   text-decoration: none;
-  color:black
+  color:black;
 }
 .Alist a:hover{
   text-decoration: underline;
@@ -168,7 +169,7 @@ aside ul li{
   overflow: hidden;
   border-radius:5px;
   color: white;
-  font-weight: bold;
+  font-weight: bolder;
   }
 
 .sub{
@@ -184,9 +185,9 @@ aside ul li{
 .readmore{
   display: inline-block;
   border: 1px solid;
-  background-color: red;
+  background-color: #FF5C67;
   color: #fff;
-  opacity: 0.5;
+  opacity: 0.7;
   padding: 0.5rem 1.5rem;
   text-decoration-line: none;
 }
@@ -199,19 +200,84 @@ aside ul li{
   text-align: justify;
 }
 
-
+/* background image box */
+/* Africa */
+.afr_box1{
+  background: url(Image/Africa/afr1_1.jpg) no-repeat center center/cover;
+}
+.afr_box2{
+  background: url(Image/Africa/afr2.jpg) no-repeat center center/cover;
+}
+.afr_box3{
+  background: url(Image/Africa/afr3.jpg) no-repeat center center/cover;
+}
+.afr_box4{
+  background: url(Image/Africa/afr4.jpg) no-repeat center center/cover;
+}
+.afr_box5{
+  background: url(Image/Africa/afr5.jpg) no-repeat center center/cover;
+}
+/* America */
 .am_box1{
-  background: url(../Image/America/am1_1.jpeg) no-repeat center center/cover;
+  background: url(Image/America/am1_1.jpeg) no-repeat center center/cover;
 }
 .am_box2{
-  background: url(../Image/America/am2_1.jpeg) no-repeat center center/cover;
+  background: url(Image/America/am2_1.jpg) no-repeat center center/cover;
 }
 .am_box3{
-  background: url(../Image/America/am3.jpeg) no-repeat center center/cover;
+  background: url(Image/America/am3.jpg) no-repeat center center/cover;
 }
 .am_box4{
-  background: url(../Image/America/am4.jpeg) no-repeat center center/cover;
+  background: url(Image/America/am4.jpg) no-repeat center center/cover;
 }
 .am_box5{
-  background: url(../Image/America/am5.jpeg) no-repeat center center/cover;
+  background: url(Image/America/am5.jpg) no-repeat center center/cover;
+}
+/* Asia */
+.as_box1{
+  background: url(Image/Asia/asia1.jpeg) no-repeat center center/cover;
+}
+.as_box2{
+  background: url(Image/Asia/asia2.jpg) no-repeat center center/cover;
+}
+.as_box3{
+  background: url(Image/Asia/asia3_1.jpg) no-repeat center center/cover;
+}
+.as_box4{
+  background: url(Image/Asia/asia4.jpg) no-repeat center center/cover;
+}
+.as_box5{
+  background: url(Image/Asia/asia5.jpg) no-repeat center center/cover;
+}
+/* Europe */
+.eu_box1{
+  background: url(Image/Europe/eu1_1.jpg) no-repeat center center/cover;
+}
+.eu_box2{
+  background: url(Image/Europe/eu2.jpg) no-repeat center center/cover;
+}
+.eu_box3{
+  background: url(Image/Europe/eu3.jpg) no-repeat center center/cover;
+}
+.eu_box4{
+  background: url(Image/Europe/eu4_1.jpg) no-repeat center center/cover;
+}
+.eu_box5{
+  background: url(Image/Europe/eu5.jpg) no-repeat center center/cover;
+}
+/* Catarrh */
+.cat_box1{
+  background: url(Image/Catarrh/cat1.jpg) no-repeat center center/cover;
+}
+.cat_box2{
+  background: url(Image/Catarrh/cat2_1.jpg) no-repeat center center/cover;
+}
+.cat_box3{
+  background: url(Image/Catarrh/cat3_1.jpg) no-repeat center center/cover;
+}
+.cat_box4{
+  background: url(Image/Catarrh/cat4.jpeg) no-repeat center center/cover;
+}
+.cat_box5{
+  background: url(Image/Catarrh/cat5_1.jpg) no-repeat center center/cover;
 }
