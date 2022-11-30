@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+/*구글에서 폰트 불러오기입니다 인터넷 연결 필요*/
+.head
+{
+    background-color: #5FA0D1;
+    height: 50px; text-align:center;
+    vertical-align:middle;
+    color:white;
+    font-family: 'Noto Sans KR', cursive;
+    font-size:50px;
+    padding:50px;
+}
+.head>a
+{
+display:inline-block;
+width:100%;
+color:White;
+font-family: 'Gugi', cursive;
+    font-size:50px;
+}
+/*--head클래스는 맨위 제목 부분입니다. head클래스의 크기,배경,글씨스타일을 담았습니다.*/
+.menu
+{
+  width: 100%;
+  overflow: hidden;
+  margin: auto;
+  font-family: 'Noto Sans KR', cursive;
+}/*NAV의 기본속성입니다.*/
+
+.menu > li {
+  width: 20%;/*메뉴 항목이 5개라 100/5=20*/
+  float: left;
+  text-align: center;
+  line-height: 40px;/*줄높이 설정(여백 크기 정하기)*/
+  background-color:white;
+  transition:background-color,1s;/*색변화 줄 경우 1s의 시간동안 자연스럽게 변화*/
+}
+
+.menu >li> a {
+
+  display:inline-block;
+  width: 100%; /*li 크기의 100% 사용*/
+  color: black;
+  font-size:large;
+  font-weight:bolder;
+  transition: color 1s;/*색변화 줄 경우 1s의 시간동안 자연스럽게 변화*/
+}/*NAV의 항목들 글씨스타일 관련*/
+.menu >li>a:hover
+{
+color:white;
+}
+.menu>li:hover
+{
+  background-color:#5FA0D1;
+}
+li{
+    list-style:none
+}/*li 안의 내용 앞에 아이콘 없애줌*/
+a{
+    text-decoration: none;font-size:14px;
+}/*a태그 밑줄 없애줌*/
+/*******************************************메뉴바 끝*********************************************/
+.container{
+    background: url(Image/Asia/asia1.jpeg) no-repeat center center/cover;
+    position: static;
+    width: 840px;
+    height: 400px;
+  
+    color:white;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+    border-radius:5px;
+    transition:opacity 1s;
+    text-shadow:-2px 0 black, 0 2px black, 2px 0 black, 0 2px black;
+    }
+  .line1{margin-top:3px;
+  text-align:center;}
+  .container:hover{
+      opacity:0.7;
+      color: lightblue;
+  }
+  h1{
+      font-size:40px;
+  }
+  p{
+      font-size:25px;
+      text-shadow:-0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+  }
+  /*******************sub는 headline을 제외한 접혀있는 카드를 관리하는 설정입니다.*******************/
+  .sub{
+      height:150px;
+      margin-top:50px;
+      transition:height 1s;}
+  
+  .sub:hover{
+      height:400px;
+  
+  
+  }
+  /*******************sub는 headline을 제외한 접혀있는 카드를 관리하는 설정입니다.*******************/
+  .sub{
+      height:150px;
+      margin-top:50px;
+      transition:height 1s;}
+  
+  .sub:hover{
+      height:400px;
+  
+  
+  }
+  /*******************sub는 headline을 제외한 접혀있는 카드를 관리하는 설정입니다.*******************/
+  
+  
+  /*****더보기 버튼 관련 설정입니다.*******/
+  .readmore{
+  
+    display: inline-block;
+    border: 1px solid;
+    background-color: red;
+    color: #fff;
+    opacity: 0.5;
+    padding: 0.5rem 1.5rem;
+    text-decoration-line: none;
+  }
+  /*****더보기 버튼 관련 설정입니다.*******/
+
+  .foot{
+    text-align:center;
+    vertical-align: middle;
+    margin: 0 auto;
+    padding: 0 2rem;
+    overflow: hidden;
+    border:5px solid #5FA0D1;
+    border-radius:5px;
+    transition:opacity 1s;
+    width:500px;
+    height:100px;
+
+    background-color: white;
+    color:black;
+    font-size:20px;
+    font-family: 'Noto Sans KR', cursive;
+    clear:both;
+    
+  }
+  .survey{
+    display:inline-block;
+    border:5px solid #5FA0D1;
+    border-radius:5px;
+    background-color: greenyellow;
+    color:black;
+opacity:0.8;
+transition: opacity 1s;
+font-family:'Nanum Gothic',cursive;
+}
+.survey:hover{
+    opacity:1;
+}

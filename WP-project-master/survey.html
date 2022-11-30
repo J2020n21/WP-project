@@ -1,0 +1,39 @@
+<!--설문조사 페이지-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.survey{
+width:500;
+display:inline-block;
+border:5px solid #5FA0D1;
+border-radius:5px;
+background-color: white;
+color:black;
+}
+.center{
+    text-align: center;
+}
+</style>
+</head>
+<body>
+<script>
+let UserName=prompt("이름을 입력하세요",);
+let UserAge=prompt("나이를 입력하세요",);
+User=new Object();
+User.Name=UserName;
+User.Age=UserAge;
+</script>
+<div class="survey">
+<div class="center">설문조사</div>
+<hr>
+<div style="font-weight: bolder;"><script>document.write(User.Name+"님 반갑습니다.")</script>웹페이지 이용 만족도 조사입니다. </div>
+<table>
+    <tr><td><label for="Q1_1"><input type="radio" name="Q1" id="Q1_1" value="만족"> 만족</label></td></tr>
+    <tr><td><label for="Q1_2"><input type="radio" name="Q1" id="Q1_2" value="보통"> 불만족(직접입력)</label></td></tr>
+    <tr><td><label for="Q1_3"><textarea rows="5" cols="30" name="Q1" id="Q1_3">개선할 점이 있다면 남겨주세요.</textarea></label></td></tr>
+</table>
+<div class="center"><button id="button" onclick="location.href='Home.html'">제출</button></div>
+</div>
+</body>
+</html>
